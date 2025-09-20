@@ -1,0 +1,22 @@
+<% layout('layouts/boiler') %>
+
+<div class="col-6 offset-3">
+    <div class="mb-3">
+        <h1>Login</h1>
+    </div>
+    
+    <form action="/login" method="POST" class="validate-form" >
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username" required>
+            <div class="valid-feedback">Looks Good!</div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="password" class="form-label">Enter password</label>
+            <input type="password" class="form-control" placeholder="Enter password" id="password" name="password" required>
+            <div class="valid-feedback">Looks Good!</div>
+        </div>
+        <div class="mb-3"><button class="btn btn-success">Sign Up</button></div>
+    </form>
+</div>
